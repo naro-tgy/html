@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05테두리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            list-style: none;
+            background-color: cadetblue;
+            margin: 20px;
+            width: 150px;
+            height: 50px;
+        }
+        ul .border-01 {
+            border: solid 10px yellowgreen;
+        }
+        ul .border-02 {
+            border-top: dotted 30px whitesmoke;
+            box-sizing: border;
+        }
+        ul .border-03 {
+            border-bottom: dashed 5PX tomato;
+            box-sizing: border-box/* 태두리,  패딩 포함하여 사이즈 설정 */;
+        }/* 너무 걸은듯 ㅋㅋ */
+    </style>
+</head>
+<body>
+    <UL>
+        <LI class="border-01">태두리 1</LI>
+        <LI class="border-02">테두리 2</LI>
+        <LI class="border-03">테두리 3</LI>
+    </UL>
+</body>
+</html>

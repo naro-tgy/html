@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-이미지위에 텍스트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box p {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+
+        .list {
+            width: 1280px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list .item {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+        .list .item img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .list .item p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: rgb(226, 215, 215);
+            background-color: rgba(169, 169, 169, 0.445);
+            width: 100%;
+            padding: 16px ;
+            box-sizing: border-box;
+            backdrop-filter: blur(7px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/royce-fonseca-48bRZya67Po-unsplash.jpg" alt="">
+        <p>이벤트</p>
+    </div><!-- box -->
+
+
+    <div class="list">
+        <div class="item">
+            <img src="img/dmitrii-shirnin-_z6-Q5ap7Z8-unsplash.jpg" alt="">
+            <p>나무사이 보이는 일출 </p>
+        </div><!-- item -->
+
+        <div class="item">
+            <img src="img/ruslan-valeev-Mc4TR6NMkCM-unsplash.jpg" alt="">
+            <p>일출 직전 도심의 야경</p>
+        </div><!-- item -->
+
+        <div class="item">
+            <img src="img/kenneth-li-T__Z12KkN_I-unsplash.jpg" alt="">
+            <p>돌과 파도</p>
+        </div><!-- item -->
+
+    </div><!-- list -->
+</body>
+
+</html>

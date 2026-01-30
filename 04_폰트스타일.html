@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04폰트스타일</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+        @font-face {
+            font-family: 'OngleipParkDahyeon';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .font {
+            font-size: 30px;
+            font-weight: 500;
+            font-style: italic;
+            font-family: 'GMarketSans';
+            text-align: left;
+        }
+
+        .font-02 {
+            font-size: 50px;
+            font-weight: 100;
+            font-style: italic;
+            font-family: 'OngleipParkDahyeon';
+            text-align: right;
+        }
+
+        .font-03 {
+            font-size: 30px;
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            color:rgb(28, 153, 153) ;
+            text-align: center;
+            border: dashed/* SOILD-실선 DOTTED-점선(점) DASHED-점선(선) */ 20PX rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="font">
+        폰트스타일
+    </div>
+    <div class="font-02">
+        폰트스타일 2
+    </div>
+    <div class="font-03">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta omnis quam at fugiat accusantium aut
+        tenetur eius aspernatur quis, debitis quod vel ipsam incidunt sit dignissimos error velit ratione.
+    </div>
+</body>
+
+</html>

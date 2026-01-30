@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_여백</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: darkcyan;
+        }
+        .margin-1 {
+            margin: 30px;
+            /* 외부여백 : 상하좌우 30px */
+        }
+        .margin-2 {
+            margin: 80px 100px;
+            /* 외부여백 : 상하 80px 죄우 100px */
+        }
+        .margin-3 {
+            margin: 10px 50px 80px;
+        }
+        .margin-4 {
+            margin: 10px 20px 3px 80px;
+        }
+        .margin-5 {
+            margin-top: 5px;/* 상 */
+            margin-left: 20px;/* 좌 */
+            margin-right: 90px;/* 우 */
+            margin-bottom: 45px;/* 하 */
+        }
+
+        ul li {
+            width: 100px;
+            background-color: khaki;
+            margin: 20px;
+            list-style: none;/* 앞에 점 지우기 */
+            padding: 20px;/* padding은 안쪽의 여백 */
+        }
+    </style>
+</head>
+<body>
+    <div class="margin-1">margin-1</div>
+    <div class="margin-2">margin-2</div>
+    <div class="margin-3">margin-3</div>
+    <div class="margin-4">margin-4</div>
+    <div class="margin-5">margin-5</div>
+
+    <ul>
+        <Li>padding 1</Li>
+        <li>padding 2</li>
+    </ul>
+</body>
+</html>

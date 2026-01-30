@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4일차 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 700px;
+            padding: 60px 150px;
+            background-color: bisque;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        .box a {
+            text-decoration: none;
+            border: solid 1px rgb(122, 121, 121);
+            width: 285px;
+            height: 60px;
+            display: block;
+            /* 인라인요소인 a를 사이즈 설정해주기 */
+            font-size: 18px;
+            border-radius: 40px;
+            box-sizing: border;
+            color: black;
+            line-height: 60px;
+            /* 행간: 높이와 동일한 값 */
+            margin: 0px auto;
+
+        }
+
+        .box .date p {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .box .date {
+            padding-bottom: 53px;
+        }
+
+        .box .step div {
+            border-bottom: solid 1px black;
+            text-align: center;
+            padding: 24px 0;
+        }
+
+        .box .step div p:nth-child(1) {
+            font-weight: bold;
+        }
+
+        .box .step {
+            padding-bottom: 53px;
+
+        }
+
+        .box h1 {
+            text-align: center;
+            font-size: 80px;
+            margin-bottom: 53px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>EVENT</h1>
+        <div class="date">
+            <p>팔로우 이벤트</p>
+            <P>2026.01.26 ~ 2026.02.28</P>
+        </div><!-- date -->
+        <div class="step">
+            <div>
+                <p>step 1</p>
+                <p>본 계정을 팔로우 하세요!</p>
+            </div>
+            <div>
+                <p>step 2</p>
+                <p>이 게시글을 "좋아요" 눌러주세요!</p>
+            </div>
+            <div>
+                <p>step 3</p>
+                <p>댓글로 '아이디' 남겨주세요!</p>
+            </div>
+            <div>
+                <p>step 4</p>
+                <p>참여자 모두에게 할인쿠폰 증정!</p>
+            </div>
+        </div><!-- step -->
+        <a href="#">계정으로 이동하기</a>
+
+    </div><!-- box -->
+</body>
+
+</html>
+<!--
+div {
+position:absolute:
+ top: 숫자px;
+ left:숫자px;
+ } 
+position의 속성값:
+static 기본값
+fixed 브라우저 기준 위치 고정
+relative 위치를 강제로 이동해주고자 할때. 또는 위아래 위치값 변화시켜줄때
+absolute 부모의 position을 기준으로 좌표값 달라짐. 
+부모가 position이 없다면 pdsition:relative 작성해주기
+sticky 부모 영역안에서 고정 -->
