@@ -41,35 +41,60 @@
             object-fit: cover;
         }
 
-        .sction2 {}
+
         .sction2 .inner {
-        width: 1280px;
-        margin: 120px auto;
+            width: 1280px;
+            margin: 120px auto;
         }
-        .sction2 .inner  .title {
+
+        .sction2 .inner .title {
             margin-bottom: 50px;
         }
-        .sction2 .inner  .title h2 {
+
+        .sction2 .inner .title h2 {
             font-size: 80px;
             margin-bottom: 20px;
             line-height: 1;
         }
-        .sction2 .inner  .title p {}
-        .sction2 .inner  .list {
+
+        .sction2 .inner .list {
             display: flex;
+            justify-content: space-between;
         }
 
-        .sction2 .inner  .list .item {
+        .sction2 .inner .list .item {
             width: 299px;
             height: 360px;
             background-color: rgba(97, 102, 107, 0.274);
             padding: 36px;
+            box-sizing: border-box;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        .sction2 .inner  .list .item .text {}
-        .sction2 .inner  .list .item .text span {}
-        .sction2 .inner  .list .item .text h3 {}
-        .sction2 .inner  .list .item .text p {}
-        .sction2 .inner  .list .item span {}
+
+        .sction2 .inner .list .item .text span {
+            background-color: aliceblue;
+            width: 80px;
+            height: 30px;
+            font-size: 14px;
+            display: block;
+            text-align: center;
+            border-radius: 20px;
+            line-height: 30px;
+        }
+
+        .sction2 .inner .list .item .text h3 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        /* 선택자 >는 자식선택자 선택
+         >없으면 자식, 자손 모두 선택  */
+        .sction2 .inner .list .item>span {
+            color: rgb(255, 0, 0);
+        }
     </style>
 </head>
 
@@ -148,5 +173,7 @@
         </div><!-- inner -->
     </div><!-- sction2 -->
 </body>
+<!-- strong : 글자를 두껍게 표현 ,중요성 강조 (인라인 요소)
+ em : 글자를 기울기 표현, 중요성 강조 (인라인 요소) -->
 
 </html>
